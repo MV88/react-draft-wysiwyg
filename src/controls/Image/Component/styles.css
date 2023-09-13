@@ -11,7 +11,7 @@
   left: 5px;
   display: flex;
   flex-direction: column;
-  width: 235px;
+  width: 285px;
   border: 1px solid #F1F1F1;
   padding: 15px;
   border-radius: 2px;
@@ -167,4 +167,8 @@
   color: red;
   margin-left: 3px;
   margin-right: 3px;
+}
+
+.rdw-image-guideText {
+  font-size: 10px;
 }

@@ -175,6 +175,8 @@ class LayoutComponent extends Component {
     } = this.state;
     const {
       config: {
+        onImageError,
+        guideText = "test",
         popupClassName,
         uploadCallback,
         uploadEnabled,
@@ -254,6 +256,7 @@ class LayoutComponent extends Component {
             />
           </div>
         ) : (
+          <>
           <div className="rdw-image-modal-url-section">
             <input
               className="rdw-image-modal-url-input"
@@ -265,6 +268,10 @@ class LayoutComponent extends Component {
             />
             <span className="rdw-image-mandatory-sign">*</span>
           </div>
+          <span className="rdw-image-guideText">
+            {guideText} 
+          </span>
+          </>
         )}
         {altConf.present && (
           <div className="rdw-image-modal-size">
